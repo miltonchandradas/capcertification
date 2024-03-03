@@ -1,0 +1,4 @@
+INITIALIZE AND RUN PROJECT
+---------------------------------------------------------------
+cds init risk-management
+cds watch
