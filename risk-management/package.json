@@ -7,12 +7,18 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
+    "@sap/cds-dk": "^7.7.0",
     "express": "^4"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1"
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.120.5"
   },
   "scripts": {
-    "start": "cds-serve"
-  }
+    "start": "cds-serve",
+    "watch-risk-management": "cds watch --open risk-management/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/risk-management"
+  ]
 }
