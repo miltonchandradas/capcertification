@@ -2,3 +2,9 @@ INITIALIZE AND RUN PROJECT
 ---------------------------------------------------------------
 cds init risk-management
 cds watch
+
+
+GITHUB COMMANDS
+---------------------------------------------------------------
+git checkout cap_unit4_customlogic && git rebase main
+git push -u -f origin cap_uni4_customlogic
