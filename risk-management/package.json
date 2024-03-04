@@ -19,11 +19,10 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
-    "@sap/cds-dk": "^7",
     "@sap/ux-specification": "^1.120.5"
   },
   "scripts": {
-    "start": "cds run",
+    "start": "cds-serve",
     "watch-risk-management": "cds watch --open risk-management/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
