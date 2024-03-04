@@ -1,7 +1,42 @@
 {
-  "xsappname": "risk-management-dev",
-  "tenant-mode": "dedicated",
-  "scopes": [],
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.RiskViewer",
+      "description": "RiskViewer"
+    },
+    {
+      "name": "$XSAPPNAME.RiskManager",
+      "description": "RiskManager"
+    }
+  ],
   "attributes": [],
-  "role-templates": []
+  "role-templates": [
+    {
+      "name": "RiskViewer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.RiskViewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "RiskManager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.RiskManager"
+      ],
+      "attribute-references": []
+    }
+  ],
+  "oauth2-configuration": {
+    "token-validity": 3600,
+    "redirect-uris": [
+      "http://localhost:5000/**",
+      "http://localhost:4004/**",
+      "https://*.*.applicationstudio.cloud.sap/**",
+      "https://*.cfapps.*.hana.ondemand.com/**",
+      "https://*.authentication.*.hana.ondemand.com/**",
+      "https://oauth.pstmn.io/v1/callback"
+    ]
+  }
 }

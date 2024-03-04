@@ -11,15 +11,19 @@
     "@sap-cloud-sdk/resilience": "^3.12.0",
     "@sap/cds": "^7",
     "@sap/cds-dk": "^7.7.0",
+    "@sap/cds-hana": "^2",
+    "@sap/xsenv": "^4.2.0",
+    "@sap/xssec": "^3",
     "express": "^4",
     "passport": "^0.7.0"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
     "@sap/ux-specification": "^1.120.5"
   },
   "scripts": {
-    "start": "cds-serve",
+    "start": "cds run",
     "watch-risk-management": "cds watch --open risk-management/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
@@ -33,6 +37,10 @@
         "credentials": {
           "url": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/"
         }
+      },
+      "[production]": {
+        "db": "hana",
+        "auth": "xsuaa"
       }
     }
   }
