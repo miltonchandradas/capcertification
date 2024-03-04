@@ -42,7 +42,7 @@ modules:
 
   - name: risk-management
     type: approuter.nodejs
-    path: app\router
+    path: app/
     parameters:
       keep-existing-routes: true
       disk-quota: 256M
@@ -85,7 +85,3 @@ resources:
           description: View Risks
           role-template-references:
           - $XSAPPNAME.RiskViewer
-        oauth2-configuration:
-          redirect-uris:
-            - https://**.hana.ondemand.com/login/callback # Wildcard redirect to SAP BTP (You might want to make this more exclusive)
-            # example: - https://risk-management-approuter.cfapps.eu10-004.hana.ondemand.com/login/callback

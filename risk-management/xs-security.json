@@ -36,6 +36,7 @@
       "https://*.*.applicationstudio.cloud.sap/**",
       "https://*.cfapps.*.hana.ondemand.com/**",
       "https://*.authentication.*.hana.ondemand.com/**",
+      "https://**.hana.ondemand.com/login/callback",
       "https://oauth.pstmn.io/v1/callback"
     ]
   }

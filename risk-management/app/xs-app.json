@@ -1,5 +1,5 @@
 {
-  "welcomeFile": "app/index.html",
+  "welcomeFile": "app/launchpad.html",
   "routes": [
     {
       "source": "^/app/(.*)$",
